@@ -35,7 +35,7 @@ export class FetchData extends Component {
                             <td>{forecast.temperatureC}</td>
                             <td>{forecast.temperatureF}</td>
                             <td>{forecast.summary}</td>
-                            <td>{forcast.precipitation}</td>
+                            <td>{forecast.precipitation}</td>
                         </tr>
                     )}
                 </tbody>
@@ -48,6 +48,7 @@ export class FetchData extends Component {
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
             : FetchData.renderForecastsTable(this.state.forecasts);
+
         // Either way we render the title, and a description.
         return (
             <div>

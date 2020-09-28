@@ -7,12 +7,15 @@ using Microsoft.Extensions.Logging;
 
 namespace Dotnet_React.Controllers
 {
-
     // File Summary: Our API controller that our front end will make calls to.
 
     // In-Class Practice:
     // - Add a precipitation summary to the data. (Random selection of: Rain, Snow, Sleet, Hail, Cats and Dogs)
     // - Ensure that it is functional on the output page.
+
+    // - Model: /WeatherForecast.cs
+    // - Controller: /Controllers/WeatherForecastController.cs
+    // - "View": /ClientApp/src/components/FetchData.js
 
     [ApiController]
     [Route("[controller]")]
@@ -22,11 +25,12 @@ namespace Dotnet_React.Controllers
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
-
         private static readonly string[] Precipitations = new[]
         {
-           "Rain"," Snow", "Sleet", "Hail", "Cats", "Dogs"
+            "Rain", "Snow", "Sleet", "Hail", "Cats and Dogs"
         };
+
+
         private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
