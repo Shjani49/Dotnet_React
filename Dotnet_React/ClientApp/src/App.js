@@ -1,3 +1,4 @@
+// File Summary: Main App class for React.
 import React, { Component } from 'react';
 import { Route } from 'react-router';
 import { Layout } from './components/Layout';

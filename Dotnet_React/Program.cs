@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Dotnet_React
 {
+    // File Summary: The entry point for the program that calls everything else (just like a console app). You probably won't touch this file.
     public class Program
     {
         public static void Main(string[] args)

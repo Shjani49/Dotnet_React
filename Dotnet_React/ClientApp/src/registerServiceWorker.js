@@ -1,3 +1,5 @@
+// File Summary: Responsible for registering services. You should not need to modify this.
+
 // In production, we register a service worker to serve assets from local cache.
 
 // This lets the app load faster on subsequent visits in production, and gives
