@@ -202,7 +202,7 @@ namespace MVC_1.Controllers
 
                 // Semantically, we should be including a copy of the object (or at least a DTO rendering of it) in the Ok response.
                 // For our purposes, a message with the fields will suffice.
-                response = Ok(new { message = $"Successfully update person at ID {id} to be {firstName} {lastName}." });
+                response = Ok(new { message = $"Successfully updated person at ID {id} to be {firstName} {lastName}." });
             }
             catch (PersonValidationException e)
             {
