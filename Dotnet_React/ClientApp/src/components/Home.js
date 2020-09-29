@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 export class Home extends Component {
   static displayName = Home.name;
 
+     // This render() is static, there are no references to state or variables, it will always render the same thing.
   render () {
     return (
       <div>

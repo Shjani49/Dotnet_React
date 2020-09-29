@@ -31,6 +31,18 @@
     </noscript>
     <div id="root"></div>
     <!--
+        How React builds the page (Use the first commit in which this description is present, as future commits may change line numbers):
+        1) Index.js runs and identifies "rootElement" as the element with the ID 'root' (Line 11).
+        2) Index.js uses ReactDOM to render our React App in the "rootElement" div (Lines 13-17).
+        3) Index.js' JSX contains the "<App />" component, which is imported on line 7, and is a reference to the App.js file.
+        4) App.js' <App /> component will be rendered, which contains a <Layout /> component (Lines 17-22), which is imported on line 5, and is a reference to the components/Layout.js file. It uses the <Route /> component from React Router to associate components with URL paths.
+        5) components/Layout.js' <Layout /> component will be rendered, which contains references to the layout's children (Line 14). This is a reference to the associated React Router component declared in <App />. This causes the child components to be rendered based on the path using Router. It also contains a reference to <NavMenu />, which is imported on Line 3, and is a reference to the components/NavMenu.js file.
+        6) <NavMenu /> gets rendered, which contains the links to the React Router URL paths. It contains CSS to deal with mobile devices.
+        7) The child with the path matching the URL gets rendered in place of {this.props.children} in <Layout /> which could be <Home />, <Counter /> or <FetchData />.
+    -->
+
+
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 

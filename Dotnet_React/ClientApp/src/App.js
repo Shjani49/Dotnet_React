@@ -15,7 +15,8 @@ export default class App extends Component {
 
   render () {
     return (
-      <Layout>
+        <Layout>
+            {/* These React Router routes will pair a URL path to a component that is to be rendered. The component is identified by its class name. */}
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
             <Route path='/fetch-data' component={FetchData} />

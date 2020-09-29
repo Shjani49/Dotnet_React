@@ -10,6 +10,7 @@ export class NavMenu extends Component {
         super(props);
 
         this.toggleNavbar = this.toggleNavbar.bind(this);
+
         this.state = {
             collapsed: true
         };
@@ -20,6 +21,7 @@ export class NavMenu extends Component {
             collapsed: !this.state.collapsed
         });
     }
+
 
     render() {
         return (
